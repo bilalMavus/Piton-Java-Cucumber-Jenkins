@@ -1,0 +1,10 @@
+
+ Maven'ın verdiği düzenli yapının yanında bende kendi düzenli klasör yapımı oluşturdum.
+   Klasörlerim ve içerikleri :
+   FeatureFiles   -> Senaryolarımı hazırladığım klasördür.
+   StepDefinitions-> Senaryolarımın çalışan adımları yani metodları bu klasörde olacak.
+   Pages          -> Page Object Modell(POM)(@FindBy) klasörüm. Locatorlerim ve dönüşümleri bu klasörde olacak.
+   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarım yani mini kütüphanem bu klasörde.
+   Runners        -> Exdent report için çalıştırıcım burada olcak.
+   Test Reports   -> Ayrıntılı raporlarımı koşulan testin tarihine göre sınıflayarak listelenecektir Not= Klasörler default oluşur
+

@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
         tags = "@RegressionTest or @UnitTest", //Test edilecek senaryolar için tags belirledim.
         features = {"src/test/java/FeatureFiles"}, // buraya feature files in pathini girdim.
         glue = {"StepDefinitions"}, // Step definitions klasörünün adını girdim.
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"} //Extent test için plugin ekledim.
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","json:target/cucumber/cucumber.json"} //Extent test için plugin ekledim.
 )
 public class TestRunnerExtentReport extends AbstractTestNGCucumberTests {
     @AfterClass // Rapor bittiği zaman bu metodu çalıştırsın ve bilgileri eklesin

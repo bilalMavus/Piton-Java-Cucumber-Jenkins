@@ -21,5 +21,7 @@ public class TestRunnerExtentReport extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Team Leader", "Bilal");
         ExtentService.getInstance().setSystemInfo("Test Sorumlusu", "Bilal");
         ExtentService.getInstance().setSystemInfo("Ek Satır", "Açıklama");
+
+        System.out.println("Test Başarılı = " + "Test Başarılı");
     }
 }

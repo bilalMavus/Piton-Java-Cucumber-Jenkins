@@ -3,6 +3,7 @@ package Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -45,7 +46,9 @@ public class ParametersWebDriver {
                     break;
                 default: // Herhangi bir parametre gelmediğinde de default çalışması için chromeyi defaulta atadım
                     WebDriverManager.chromedriver().setup();
-                    threadDriver.set(new ChromeDriver()); // Threade webdriver atadım.
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--remote-allow-origins=*");
+                    threadDriver.set(new ChromeDriver(options)); // Threade webdriver atadım.
             }
         }
 
